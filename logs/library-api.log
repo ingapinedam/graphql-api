@@ -1,0 +1,525 @@
+2025-03-18T13:31:09.753Z  INFO 1 --- [ApiOtel] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-18T13:31:09.760Z  INFO 1 --- [ApiOtel] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-18T13:31:09.763Z  INFO 1 --- [ApiOtel] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-18T13:31:09.764Z  INFO 1 --- [ApiOtel] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-18T13:31:09.766Z  INFO 1 --- [ApiOtel] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-18T15:08:42.147Z  INFO 1 --- [main] c.o.graphql.ApiOtelApplication           : Starting ApiOtelApplication v0.0.1-SNAPSHOT using Java 17.0.2 with PID 1 (/app/ApiOtel-0.0.1-SNAPSHOT.jar started by root in /app)
+2025-03-18T15:08:42.149Z  INFO 1 --- [main] c.o.graphql.ApiOtelApplication           : The following 1 profile is active: "docker"
+2025-03-18T15:08:42.399Z  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-18T15:08:42.459Z  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 2 JPA repository interfaces.
+2025-03-18T15:08:42.640Z  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-18T15:08:42.645Z  INFO 1 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-18T15:08:42.645Z  INFO 1 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-18T15:08:42.654Z  INFO 1 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-18T15:08:42.655Z  INFO 1 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 484 ms
+2025-03-18T15:08:42.711Z  INFO 1 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-18T15:08:42.732Z  INFO 1 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-18T15:08:42.743Z  INFO 1 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-18T15:08:42.846Z  INFO 1 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-18T15:08:42.858Z  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-18T15:08:42.933Z  INFO 1 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:librarydb user=SA
+2025-03-18T15:08:42.934Z  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-18T15:08:42.943Z  WARN 1 --- [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-18T15:08:42.952Z  INFO 1 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-18T15:08:43.237Z  INFO 1 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-18T15:08:43.262Z  INFO 1 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-18T15:08:43.410Z  WARN 1 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dateController' defined in URL [jar:nested:/app/ApiOtel-0.0.1-SNAPSHOT.jar/!BOOT-INF/classes/!/com/observability/graphql/controller/DateController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'dateService' defined in URL [jar:nested:/app/ApiOtel-0.0.1-SNAPSHOT.jar/!BOOT-INF/classes/!/com/observability/graphql/service/DateService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'com.observability.graphql.client.DateServiceClient': Unexpected exception during bean creation
+2025-03-18T15:08:43.411Z  INFO 1 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-18T15:08:43.412Z  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-18T15:08:43.413Z  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-18T15:08:43.414Z  INFO 1 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-03-18T15:08:43.418Z  INFO 1 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-18T15:08:43.427Z ERROR 1 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.observability.graphql.service.DateService required a bean of type 'org.springframework.cloud.openfeign.FeignContext' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.cloud.openfeign.FeignContext' in your configuration.
+
+2025-03-18T15:08:44.088Z  INFO 1 --- [main] c.o.graphql.ApiOtelApplication           : Starting ApiOtelApplication v0.0.1-SNAPSHOT using Java 17.0.2 with PID 1 (/app/ApiOtel-0.0.1-SNAPSHOT.jar started by root in /app)
+2025-03-18T15:08:44.089Z  INFO 1 --- [main] c.o.graphql.ApiOtelApplication           : The following 1 profile is active: "docker"
+2025-03-18T15:08:44.327Z  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-18T15:08:44.384Z  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 2 JPA repository interfaces.
+2025-03-18T15:08:44.572Z  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-18T15:08:44.578Z  INFO 1 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-18T15:08:44.579Z  INFO 1 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-18T15:08:44.589Z  INFO 1 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-18T15:08:44.590Z  INFO 1 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 481 ms
+2025-03-18T15:08:44.648Z  INFO 1 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-18T15:08:44.667Z  INFO 1 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-18T15:08:44.681Z  INFO 1 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-18T15:08:44.779Z  INFO 1 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-18T15:08:44.792Z  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-18T15:08:44.862Z  INFO 1 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:librarydb user=SA
+2025-03-18T15:08:44.863Z  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-18T15:08:44.872Z  WARN 1 --- [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-18T15:08:44.880Z  INFO 1 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-18T15:08:45.179Z  INFO 1 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-18T15:08:45.204Z  INFO 1 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-18T15:08:45.335Z  WARN 1 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dateController' defined in URL [jar:nested:/app/ApiOtel-0.0.1-SNAPSHOT.jar/!BOOT-INF/classes/!/com/observability/graphql/controller/DateController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'dateService' defined in URL [jar:nested:/app/ApiOtel-0.0.1-SNAPSHOT.jar/!BOOT-INF/classes/!/com/observability/graphql/service/DateService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'com.observability.graphql.client.DateServiceClient': Unexpected exception during bean creation
+2025-03-18T15:08:45.335Z  INFO 1 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-18T15:08:45.337Z  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-18T15:08:45.338Z  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-18T15:08:45.339Z  INFO 1 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-03-18T15:08:45.344Z  INFO 1 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-18T15:08:45.352Z ERROR 1 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.observability.graphql.service.DateService required a bean of type 'org.springframework.cloud.openfeign.FeignContext' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.cloud.openfeign.FeignContext' in your configuration.
+
+2025-03-18T15:08:46.045Z  INFO 1 --- [main] c.o.graphql.ApiOtelApplication           : Starting ApiOtelApplication v0.0.1-SNAPSHOT using Java 17.0.2 with PID 1 (/app/ApiOtel-0.0.1-SNAPSHOT.jar started by root in /app)
+2025-03-18T15:08:46.047Z  INFO 1 --- [main] c.o.graphql.ApiOtelApplication           : The following 1 profile is active: "docker"
+2025-03-18T15:08:46.289Z  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-18T15:08:46.344Z  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 2 JPA repository interfaces.
+2025-03-18T15:08:46.525Z  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-18T15:08:46.530Z  INFO 1 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-18T15:08:46.530Z  INFO 1 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-18T15:08:46.548Z  INFO 1 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-18T15:08:46.548Z  INFO 1 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 482 ms
+2025-03-18T15:08:46.617Z  INFO 1 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-18T15:08:46.638Z  INFO 1 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-18T15:08:46.651Z  INFO 1 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-18T15:08:46.746Z  INFO 1 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-18T15:08:46.757Z  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-18T15:08:46.827Z  INFO 1 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:librarydb user=SA
+2025-03-18T15:08:46.828Z  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-18T15:08:46.836Z  WARN 1 --- [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-18T15:08:46.843Z  INFO 1 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-18T15:08:47.125Z  INFO 1 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-18T15:08:47.149Z  INFO 1 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-18T15:08:47.290Z  WARN 1 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dateController' defined in URL [jar:nested:/app/ApiOtel-0.0.1-SNAPSHOT.jar/!BOOT-INF/classes/!/com/observability/graphql/controller/DateController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'dateService' defined in URL [jar:nested:/app/ApiOtel-0.0.1-SNAPSHOT.jar/!BOOT-INF/classes/!/com/observability/graphql/service/DateService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'com.observability.graphql.client.DateServiceClient': Unexpected exception during bean creation
+2025-03-18T15:08:47.290Z  INFO 1 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-18T15:08:47.292Z  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-18T15:08:47.293Z  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-18T15:08:47.294Z  INFO 1 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-03-18T15:08:47.298Z  INFO 1 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-18T15:08:47.306Z ERROR 1 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.observability.graphql.service.DateService required a bean of type 'org.springframework.cloud.openfeign.FeignContext' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.cloud.openfeign.FeignContext' in your configuration.
+
+2025-03-18T15:08:48.271Z  INFO 1 --- [main] c.o.graphql.ApiOtelApplication           : Starting ApiOtelApplication v0.0.1-SNAPSHOT using Java 17.0.2 with PID 1 (/app/ApiOtel-0.0.1-SNAPSHOT.jar started by root in /app)
+2025-03-18T15:08:48.272Z  INFO 1 --- [main] c.o.graphql.ApiOtelApplication           : The following 1 profile is active: "docker"
+2025-03-18T15:08:48.522Z  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-18T15:08:48.580Z  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 2 JPA repository interfaces.
+2025-03-18T15:08:48.757Z  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-18T15:08:48.762Z  INFO 1 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-18T15:08:48.762Z  INFO 1 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-18T15:08:48.771Z  INFO 1 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-18T15:08:48.772Z  INFO 1 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 479 ms
+2025-03-18T15:08:48.825Z  INFO 1 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-18T15:08:48.844Z  INFO 1 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-18T15:08:48.856Z  INFO 1 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-18T15:08:48.951Z  INFO 1 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-18T15:08:48.959Z  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-18T15:08:49.029Z  INFO 1 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:librarydb user=SA
+2025-03-18T15:08:49.030Z  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-18T15:08:49.038Z  WARN 1 --- [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-18T15:08:49.046Z  INFO 1 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-18T15:08:49.313Z  INFO 1 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-18T15:08:49.336Z  INFO 1 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-18T15:08:49.477Z  WARN 1 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dateController' defined in URL [jar:nested:/app/ApiOtel-0.0.1-SNAPSHOT.jar/!BOOT-INF/classes/!/com/observability/graphql/controller/DateController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'dateService' defined in URL [jar:nested:/app/ApiOtel-0.0.1-SNAPSHOT.jar/!BOOT-INF/classes/!/com/observability/graphql/service/DateService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'com.observability.graphql.client.DateServiceClient': Unexpected exception during bean creation
+2025-03-18T15:08:49.478Z  INFO 1 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-18T15:08:49.480Z  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-18T15:08:49.481Z  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-18T15:08:49.482Z  INFO 1 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-03-18T15:08:49.487Z  INFO 1 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-18T15:08:49.494Z ERROR 1 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.observability.graphql.service.DateService required a bean of type 'org.springframework.cloud.openfeign.FeignContext' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.cloud.openfeign.FeignContext' in your configuration.
+
+2025-03-18T15:08:50.798Z  INFO 1 --- [main] c.o.graphql.ApiOtelApplication           : Starting ApiOtelApplication v0.0.1-SNAPSHOT using Java 17.0.2 with PID 1 (/app/ApiOtel-0.0.1-SNAPSHOT.jar started by root in /app)
+2025-03-18T15:08:50.800Z  INFO 1 --- [main] c.o.graphql.ApiOtelApplication           : The following 1 profile is active: "docker"
+2025-03-18T15:08:51.049Z  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-18T15:08:51.104Z  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 2 JPA repository interfaces.
+2025-03-18T15:08:51.294Z  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-18T15:08:51.298Z  INFO 1 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-18T15:08:51.298Z  INFO 1 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-18T15:08:51.307Z  INFO 1 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-18T15:08:51.307Z  INFO 1 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 488 ms
+2025-03-18T15:08:51.360Z  INFO 1 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-18T15:08:51.381Z  INFO 1 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-18T15:08:51.392Z  INFO 1 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-18T15:08:51.493Z  INFO 1 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-18T15:08:51.502Z  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-18T15:08:51.575Z  INFO 1 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:librarydb user=SA
+2025-03-18T15:08:51.576Z  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-18T15:08:51.583Z  WARN 1 --- [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-18T15:08:51.591Z  INFO 1 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-18T15:08:51.867Z  INFO 1 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-18T15:08:51.890Z  INFO 1 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-18T15:08:52.032Z  WARN 1 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dateController' defined in URL [jar:nested:/app/ApiOtel-0.0.1-SNAPSHOT.jar/!BOOT-INF/classes/!/com/observability/graphql/controller/DateController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'dateService' defined in URL [jar:nested:/app/ApiOtel-0.0.1-SNAPSHOT.jar/!BOOT-INF/classes/!/com/observability/graphql/service/DateService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'com.observability.graphql.client.DateServiceClient': Unexpected exception during bean creation
+2025-03-18T15:08:52.033Z  INFO 1 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-18T15:08:52.035Z  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-18T15:08:52.036Z  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-18T15:11:39.832Z  INFO 1 --- [main] c.o.graphql.ApiOtelApplication           : Starting ApiOtelApplication v0.0.1-SNAPSHOT using Java 17.0.2 with PID 1 (/app/ApiOtel-0.0.1-SNAPSHOT.jar started by root in /app)
+2025-03-18T15:11:39.834Z  INFO 1 --- [main] c.o.graphql.ApiOtelApplication           : The following 1 profile is active: "docker"
+2025-03-18T15:11:40.066Z  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-18T15:11:40.120Z  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 2 JPA repository interfaces.
+2025-03-18T15:11:40.297Z  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-18T15:11:40.301Z  INFO 1 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-18T15:11:40.302Z  INFO 1 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-18T15:11:40.310Z  INFO 1 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-18T15:11:40.311Z  INFO 1 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 459 ms
+2025-03-18T15:11:40.363Z  INFO 1 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-18T15:11:40.382Z  INFO 1 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-18T15:11:40.392Z  INFO 1 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-18T15:11:40.481Z  INFO 1 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-18T15:11:40.490Z  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-18T15:11:40.558Z  INFO 1 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:librarydb user=SA
+2025-03-18T15:11:40.559Z  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-18T15:11:40.568Z  WARN 1 --- [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-18T15:11:40.575Z  INFO 1 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-18T15:11:40.855Z  INFO 1 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-18T15:11:40.877Z  INFO 1 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-18T15:11:41.013Z  WARN 1 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dateController' defined in URL [jar:nested:/app/ApiOtel-0.0.1-SNAPSHOT.jar/!BOOT-INF/classes/!/com/observability/graphql/controller/DateController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'dateService' defined in URL [jar:nested:/app/ApiOtel-0.0.1-SNAPSHOT.jar/!BOOT-INF/classes/!/com/observability/graphql/service/DateService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'com.observability.graphql.client.DateServiceClient': Unexpected exception during bean creation
+2025-03-18T15:11:41.013Z  INFO 1 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-18T15:11:41.015Z  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-18T15:11:41.016Z  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-18T15:11:41.016Z  INFO 1 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-03-18T15:11:41.020Z  INFO 1 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-18T15:11:41.028Z ERROR 1 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.observability.graphql.service.DateService required a bean of type 'org.springframework.cloud.openfeign.FeignContext' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.cloud.openfeign.FeignContext' in your configuration.
+
+2025-03-18T15:11:41.674Z  INFO 1 --- [main] c.o.graphql.ApiOtelApplication           : Starting ApiOtelApplication v0.0.1-SNAPSHOT using Java 17.0.2 with PID 1 (/app/ApiOtel-0.0.1-SNAPSHOT.jar started by root in /app)
+2025-03-18T15:11:41.676Z  INFO 1 --- [main] c.o.graphql.ApiOtelApplication           : The following 1 profile is active: "docker"
+2025-03-18T15:11:41.905Z  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-18T15:11:41.957Z  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 2 JPA repository interfaces.
+2025-03-18T15:11:42.138Z  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-18T15:11:42.143Z  INFO 1 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-18T15:11:42.143Z  INFO 1 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-18T15:11:42.151Z  INFO 1 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-18T15:11:42.151Z  INFO 1 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 458 ms
+2025-03-18T15:11:42.207Z  INFO 1 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-18T15:11:42.226Z  INFO 1 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-18T15:11:42.238Z  INFO 1 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-18T15:11:42.329Z  INFO 1 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-18T15:11:42.338Z  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-18T15:11:42.406Z  INFO 1 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:librarydb user=SA
+2025-03-18T15:11:42.407Z  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-18T15:11:42.415Z  WARN 1 --- [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-18T15:11:42.425Z  INFO 1 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-18T15:11:42.696Z  INFO 1 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-18T15:11:42.719Z  INFO 1 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-18T15:11:42.852Z  WARN 1 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dateController' defined in URL [jar:nested:/app/ApiOtel-0.0.1-SNAPSHOT.jar/!BOOT-INF/classes/!/com/observability/graphql/controller/DateController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'dateService' defined in URL [jar:nested:/app/ApiOtel-0.0.1-SNAPSHOT.jar/!BOOT-INF/classes/!/com/observability/graphql/service/DateService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'com.observability.graphql.client.DateServiceClient': Unexpected exception during bean creation
+2025-03-18T15:11:42.853Z  INFO 1 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-18T15:11:42.854Z  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-18T15:11:42.855Z  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-18T15:11:42.856Z  INFO 1 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-03-18T15:11:42.861Z  INFO 1 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-18T15:11:42.873Z ERROR 1 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.observability.graphql.service.DateService required a bean of type 'org.springframework.cloud.openfeign.FeignContext' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.cloud.openfeign.FeignContext' in your configuration.
+
+2025-03-18T15:11:43.578Z  INFO 1 --- [main] c.o.graphql.ApiOtelApplication           : Starting ApiOtelApplication v0.0.1-SNAPSHOT using Java 17.0.2 with PID 1 (/app/ApiOtel-0.0.1-SNAPSHOT.jar started by root in /app)
+2025-03-18T15:11:43.580Z  INFO 1 --- [main] c.o.graphql.ApiOtelApplication           : The following 1 profile is active: "docker"
+2025-03-18T15:11:43.824Z  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-18T15:11:43.877Z  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 2 JPA repository interfaces.
+2025-03-18T15:11:44.061Z  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-18T15:11:44.066Z  INFO 1 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-18T15:11:44.066Z  INFO 1 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-18T15:11:44.075Z  INFO 1 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-18T15:11:44.076Z  INFO 1 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 475 ms
+2025-03-18T15:11:44.133Z  INFO 1 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-18T15:11:44.154Z  INFO 1 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-18T15:11:44.164Z  INFO 1 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-18T15:11:44.262Z  INFO 1 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-18T15:11:44.272Z  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-18T15:11:44.339Z  INFO 1 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:librarydb user=SA
+2025-03-18T15:11:44.340Z  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-18T15:11:44.348Z  WARN 1 --- [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-18T15:11:44.355Z  INFO 1 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-18T15:11:44.656Z  INFO 1 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-18T15:11:44.679Z  INFO 1 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-18T15:11:44.813Z  WARN 1 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dateController' defined in URL [jar:nested:/app/ApiOtel-0.0.1-SNAPSHOT.jar/!BOOT-INF/classes/!/com/observability/graphql/controller/DateController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'dateService' defined in URL [jar:nested:/app/ApiOtel-0.0.1-SNAPSHOT.jar/!BOOT-INF/classes/!/com/observability/graphql/service/DateService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'com.observability.graphql.client.DateServiceClient': Unexpected exception during bean creation
+2025-03-18T15:11:44.813Z  INFO 1 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-18T15:11:44.814Z  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-18T15:11:44.816Z  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-18T15:11:44.816Z  INFO 1 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-03-18T15:11:44.821Z  INFO 1 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-18T15:11:44.827Z ERROR 1 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.observability.graphql.service.DateService required a bean of type 'org.springframework.cloud.openfeign.FeignContext' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.cloud.openfeign.FeignContext' in your configuration.
+
+2025-03-18T15:11:45.760Z  INFO 1 --- [main] c.o.graphql.ApiOtelApplication           : Starting ApiOtelApplication v0.0.1-SNAPSHOT using Java 17.0.2 with PID 1 (/app/ApiOtel-0.0.1-SNAPSHOT.jar started by root in /app)
+2025-03-18T15:11:45.761Z  INFO 1 --- [main] c.o.graphql.ApiOtelApplication           : The following 1 profile is active: "docker"
+2025-03-18T15:11:46.018Z  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-18T15:11:46.076Z  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 2 JPA repository interfaces.
+2025-03-18T15:11:46.263Z  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-18T15:11:46.268Z  INFO 1 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-18T15:11:46.268Z  INFO 1 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-18T15:11:46.277Z  INFO 1 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-18T15:11:46.277Z  INFO 1 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 498 ms
+2025-03-18T15:11:46.338Z  INFO 1 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-18T15:11:46.359Z  INFO 1 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-18T15:11:46.371Z  INFO 1 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-18T15:11:46.464Z  INFO 1 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-18T15:11:46.474Z  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-18T15:11:46.551Z  INFO 1 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:librarydb user=SA
+2025-03-18T15:11:46.552Z  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-18T15:11:46.559Z  WARN 1 --- [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-18T15:11:46.567Z  INFO 1 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-18T15:11:46.864Z  INFO 1 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-18T15:11:46.889Z  INFO 1 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-18T15:11:47.033Z  WARN 1 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dateController' defined in URL [jar:nested:/app/ApiOtel-0.0.1-SNAPSHOT.jar/!BOOT-INF/classes/!/com/observability/graphql/controller/DateController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'dateService' defined in URL [jar:nested:/app/ApiOtel-0.0.1-SNAPSHOT.jar/!BOOT-INF/classes/!/com/observability/graphql/service/DateService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'com.observability.graphql.client.DateServiceClient': Unexpected exception during bean creation
+2025-03-18T15:11:47.033Z  INFO 1 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-18T15:11:47.035Z  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-18T15:11:47.036Z  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-18T15:11:47.038Z  INFO 1 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-03-18T15:11:47.042Z  INFO 1 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-18T15:11:47.050Z ERROR 1 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.observability.graphql.service.DateService required a bean of type 'org.springframework.cloud.openfeign.FeignContext' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.cloud.openfeign.FeignContext' in your configuration.
+
+2025-03-18T15:37:11.281Z  INFO 1 --- [main] c.o.graphql.ApiOtelApplication           : Starting ApiOtelApplication v0.0.1-SNAPSHOT using Java 17.0.2 with PID 1 (/app/ApiOtel-0.0.1-SNAPSHOT.jar started by root in /app)
+2025-03-18T15:37:11.282Z  INFO 1 --- [main] c.o.graphql.ApiOtelApplication           : The following 1 profile is active: "docker"
+2025-03-18T15:37:11.553Z  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-18T15:37:11.612Z  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 2 JPA repository interfaces.
+2025-03-18T15:37:11.685Z  INFO 1 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ed857cb3-78b5-36f8-b959-0c75fd6c3e95
+2025-03-18T15:37:11.804Z  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-18T15:37:11.808Z  INFO 1 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-18T15:37:11.809Z  INFO 1 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-18T15:37:11.818Z  INFO 1 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-18T15:37:11.818Z  INFO 1 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 512 ms
+2025-03-18T15:37:11.872Z  INFO 1 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-18T15:37:11.889Z  INFO 1 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-18T15:37:11.900Z  INFO 1 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-18T15:37:12.001Z  INFO 1 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-18T15:37:12.014Z  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-18T15:37:12.077Z  INFO 1 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:librarydb user=SA
+2025-03-18T15:37:12.078Z  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-18T15:37:12.088Z  WARN 1 --- [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-18T15:37:12.097Z  INFO 1 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-18T15:37:12.386Z  INFO 1 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-18T15:37:12.411Z  INFO 1 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-18T15:37:12.579Z  WARN 1 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-18T15:37:12.766Z  INFO 1 --- [main] efaultSchemaResourceGraphQlSourceBuilder : Loaded 1 resource(s) in the GraphQL schema.
+2025-03-18T15:37:12.847Z  INFO 1 --- [main] o.s.b.a.g.GraphQlAutoConfiguration       : GraphQL schema inspection:
+	Unmapped fields: {}
+	Unmapped registrations: {}
+	Unmapped arguments: {}
+	Skipped types: []
+2025-03-18T15:37:12.857Z  INFO 1 --- [main] s.b.a.g.s.GraphQlWebMvcAutoConfiguration : GraphQL endpoint HTTP POST /graphql
+2025-03-18T15:37:12.900Z  INFO 1 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:librarydb'
+2025-03-18T15:37:12.940Z  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-18T15:37:12.948Z  INFO 1 --- [main] c.o.graphql.ApiOtelApplication           : Started ApiOtelApplication in 1.859 seconds (process running for 2.048)
+2025-03-18T15:37:25.755Z  INFO 1 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-18T15:37:25.756Z  INFO 1 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-18T15:37:25.757Z  INFO 1 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-03-18T15:37:36.115Z  INFO 1 --- [http-nio-8080-exec-2] c.o.graphql.controller.DateController    : GraphQL query for current date received
+2025-03-18T15:37:36.118Z DEBUG 1 --- [http-nio-8080-exec-2] c.o.graphql.client.DateServiceClient     : [DateServiceClient#getCurrentDate] ---> GET http://date-service:8081/api/date HTTP/1.1
+2025-03-18T15:37:36.119Z DEBUG 1 --- [http-nio-8080-exec-2] c.o.graphql.client.DateServiceClient     : [DateServiceClient#getCurrentDate] ---> END HTTP (0-byte body)
+2025-03-18T15:37:36.130Z DEBUG 1 --- [http-nio-8080-exec-2] c.o.graphql.client.DateServiceClient     : [DateServiceClient#getCurrentDate] <--- HTTP/1.1 200 (11ms)
+2025-03-18T15:37:36.131Z DEBUG 1 --- [http-nio-8080-exec-2] c.o.graphql.client.DateServiceClient     : [DateServiceClient#getCurrentDate] connection: keep-alive
+2025-03-18T15:37:36.131Z DEBUG 1 --- [http-nio-8080-exec-2] c.o.graphql.client.DateServiceClient     : [DateServiceClient#getCurrentDate] content-type: application/json
+2025-03-18T15:37:36.131Z DEBUG 1 --- [http-nio-8080-exec-2] c.o.graphql.client.DateServiceClient     : [DateServiceClient#getCurrentDate] date: Tue, 18 Mar 2025 15:37:36 GMT
+2025-03-18T15:37:36.131Z DEBUG 1 --- [http-nio-8080-exec-2] c.o.graphql.client.DateServiceClient     : [DateServiceClient#getCurrentDate] keep-alive: timeout=60
+2025-03-18T15:37:36.131Z DEBUG 1 --- [http-nio-8080-exec-2] c.o.graphql.client.DateServiceClient     : [DateServiceClient#getCurrentDate] transfer-encoding: chunked
+2025-03-18T15:37:36.131Z DEBUG 1 --- [http-nio-8080-exec-2] c.o.graphql.client.DateServiceClient     : [DateServiceClient#getCurrentDate] 
+2025-03-18T15:37:36.132Z DEBUG 1 --- [http-nio-8080-exec-2] c.o.graphql.client.DateServiceClient     : [DateServiceClient#getCurrentDate] {"currentDate":"2025-03-18","formattedDate":"2025-03-18 15:37:36 UTC","timestamp":1742312256127,"timezone":"Etc/UTC"}
+2025-03-18T15:37:36.132Z DEBUG 1 --- [http-nio-8080-exec-2] c.o.graphql.client.DateServiceClient     : [DateServiceClient#getCurrentDate] <--- END HTTP (117-byte body)
+2025-03-18T15:37:36.137Z  INFO 1 --- [http-nio-8080-exec-2] c.o.graphql.service.DateService          : Current date from service: 2025-03-18 15:37:36 UTC
+2025-03-18T15:37:36.137Z  INFO 1 --- [http-nio-8080-exec-2] c.o.graphql.controller.DateController    : Returning date information: DateResponse(currentDate=2025-03-18, formattedDate=2025-03-18 15:37:36 UTC, timestamp=1742312256127, timezone=Etc/UTC)
+2025-03-18T15:37:59.710Z  INFO 1 --- [http-nio-8080-exec-3] c.o.graphql.controller.DateController    : GraphQL query for current date received
+2025-03-18T15:37:59.711Z DEBUG 1 --- [http-nio-8080-exec-3] c.o.graphql.client.DateServiceClient     : [DateServiceClient#getCurrentDate] ---> GET http://date-service:8081/api/date HTTP/1.1
+2025-03-18T15:37:59.711Z DEBUG 1 --- [http-nio-8080-exec-3] c.o.graphql.client.DateServiceClient     : [DateServiceClient#getCurrentDate] ---> END HTTP (0-byte body)
+2025-03-18T15:37:59.717Z DEBUG 1 --- [http-nio-8080-exec-3] c.o.graphql.client.DateServiceClient     : [DateServiceClient#getCurrentDate] <--- HTTP/1.1 200 (5ms)
+2025-03-18T15:37:59.717Z DEBUG 1 --- [http-nio-8080-exec-3] c.o.graphql.client.DateServiceClient     : [DateServiceClient#getCurrentDate] connection: keep-alive
+2025-03-18T15:37:59.717Z DEBUG 1 --- [http-nio-8080-exec-3] c.o.graphql.client.DateServiceClient     : [DateServiceClient#getCurrentDate] content-type: application/json
+2025-03-18T15:37:59.718Z DEBUG 1 --- [http-nio-8080-exec-3] c.o.graphql.client.DateServiceClient     : [DateServiceClient#getCurrentDate] date: Tue, 18 Mar 2025 15:37:59 GMT
+2025-03-18T15:37:59.718Z DEBUG 1 --- [http-nio-8080-exec-3] c.o.graphql.client.DateServiceClient     : [DateServiceClient#getCurrentDate] keep-alive: timeout=60
+2025-03-18T15:37:59.718Z DEBUG 1 --- [http-nio-8080-exec-3] c.o.graphql.client.DateServiceClient     : [DateServiceClient#getCurrentDate] transfer-encoding: chunked
+2025-03-18T15:37:59.718Z DEBUG 1 --- [http-nio-8080-exec-3] c.o.graphql.client.DateServiceClient     : [DateServiceClient#getCurrentDate] 
+2025-03-18T15:37:59.719Z DEBUG 1 --- [http-nio-8080-exec-3] c.o.graphql.client.DateServiceClient     : [DateServiceClient#getCurrentDate] {"currentDate":"2025-03-18","formattedDate":"2025-03-18 15:37:59 UTC","timestamp":1742312279715,"timezone":"Etc/UTC"}
+2025-03-18T15:37:59.719Z DEBUG 1 --- [http-nio-8080-exec-3] c.o.graphql.client.DateServiceClient     : [DateServiceClient#getCurrentDate] <--- END HTTP (117-byte body)
+2025-03-18T15:37:59.720Z  INFO 1 --- [http-nio-8080-exec-3] c.o.graphql.service.DateService          : Current date from service: 2025-03-18 15:37:59 UTC
+2025-03-18T15:37:59.720Z  INFO 1 --- [http-nio-8080-exec-3] c.o.graphql.controller.DateController    : Returning date information: DateResponse(currentDate=2025-03-18, formattedDate=2025-03-18 15:37:59 UTC, timestamp=1742312279715, timezone=Etc/UTC)
+2025-03-18T15:46:06.297Z  INFO 1 --- [http-nio-8080-exec-5] c.o.graphql.controller.DateController    : GraphQL query for current date received
+2025-03-18T15:46:06.300Z DEBUG 1 --- [http-nio-8080-exec-5] c.o.graphql.client.DateServiceClient     : [DateServiceClient#getCurrentDate] ---> GET http://date-service:8081/api/date HTTP/1.1
+2025-03-18T15:46:06.300Z DEBUG 1 --- [http-nio-8080-exec-5] c.o.graphql.client.DateServiceClient     : [DateServiceClient#getCurrentDate] ---> END HTTP (0-byte body)
+2025-03-18T15:46:06.308Z DEBUG 1 --- [http-nio-8080-exec-5] c.o.graphql.client.DateServiceClient     : [DateServiceClient#getCurrentDate] <--- HTTP/1.1 200 (6ms)
+2025-03-18T15:46:06.308Z DEBUG 1 --- [http-nio-8080-exec-5] c.o.graphql.client.DateServiceClient     : [DateServiceClient#getCurrentDate] connection: keep-alive
+2025-03-18T15:46:06.308Z DEBUG 1 --- [http-nio-8080-exec-5] c.o.graphql.client.DateServiceClient     : [DateServiceClient#getCurrentDate] content-type: application/json
+2025-03-18T15:46:06.308Z DEBUG 1 --- [http-nio-8080-exec-5] c.o.graphql.client.DateServiceClient     : [DateServiceClient#getCurrentDate] date: Tue, 18 Mar 2025 15:46:06 GMT
+2025-03-18T15:46:06.309Z DEBUG 1 --- [http-nio-8080-exec-5] c.o.graphql.client.DateServiceClient     : [DateServiceClient#getCurrentDate] keep-alive: timeout=60
+2025-03-18T15:46:06.309Z DEBUG 1 --- [http-nio-8080-exec-5] c.o.graphql.client.DateServiceClient     : [DateServiceClient#getCurrentDate] transfer-encoding: chunked
+2025-03-18T15:46:06.309Z DEBUG 1 --- [http-nio-8080-exec-5] c.o.graphql.client.DateServiceClient     : [DateServiceClient#getCurrentDate] 
+2025-03-18T15:46:06.310Z DEBUG 1 --- [http-nio-8080-exec-5] c.o.graphql.client.DateServiceClient     : [DateServiceClient#getCurrentDate] {"currentDate":"2025-03-18","formattedDate":"2025-03-18 15:46:06 UTC","timestamp":1742312766305,"timezone":"Etc/UTC"}
+2025-03-18T15:46:06.310Z DEBUG 1 --- [http-nio-8080-exec-5] c.o.graphql.client.DateServiceClient     : [DateServiceClient#getCurrentDate] <--- END HTTP (117-byte body)
+2025-03-18T15:46:06.311Z  INFO 1 --- [http-nio-8080-exec-5] c.o.graphql.service.DateService          : Current date from service: 2025-03-18 15:46:06 UTC
+2025-03-18T15:46:06.311Z  INFO 1 --- [http-nio-8080-exec-5] c.o.graphql.controller.DateController    : Returning date information: DateResponse(currentDate=2025-03-18, formattedDate=2025-03-18 15:46:06 UTC, timestamp=1742312766305, timezone=Etc/UTC)
+2025-03-18T16:14:52.564Z  INFO 1 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-18T16:14:52.566Z  INFO 1 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-18T16:14:52.569Z  INFO 1 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-18T16:14:52.570Z  INFO 1 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-18T16:14:52.571Z  INFO 1 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

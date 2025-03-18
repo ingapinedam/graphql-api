@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  graphql-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: library-graphql-api
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:h2:mem:librarydb
+      - SPRING_DATASOURCE_USERNAME=sa
+      - SPRING_DATASOURCE_PASSWORD=password
+      - SPRING_H2_CONSOLE_ENABLED=true
+      - SPRING_H2_CONSOLE_SETTINGS_WEB_ALLOW_OTHERS=true
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+      - SPRING_JPA_SHOW_SQL=true
+      - SPRING_GRAPHQL_GRAPHIQL_ENABLED=true
+      - DATE_SERVICE_URL=http://date-service:8081
+    volumes:
+      - ./logs:/app/logs
+    restart: unless-stopped
+    networks:
+      - graphql-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/actuator/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+networks:
+  graphql-network:
+    name: library-network
+    driver: bridge
+    external: true
