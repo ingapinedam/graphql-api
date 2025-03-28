@@ -2,17 +2,17 @@ FROM openjdk:17-slim AS build
 
 WORKDIR /app
 
-# Copia los archivos del proyecto
-COPY mvnw .
-COPY .mvn .mvn
+# Instalar Maven
+RUN apt-get update && apt-get install -y maven
+
+# Copiar el archivo pom.xml y descargar dependencias
 COPY pom.xml .
+RUN mvn dependency:go-offline -B
+
+# Copiar el código fuente y compilar
 COPY src src
-
-# Otorga permisos de ejecución al script Maven Wrapper
-RUN chmod +x ./mvnw
-
-# Compila el proyecto y omite las pruebas
-RUN ./mvnw package -DskipTests
+RUN mvn package -DskipTests
+RUN mkdir -p target/dependency && (cd target/dependency; jar -xf ../*.jar)
 
 # Segunda etapa: imagen final más ligera
 FROM openjdk:17-slim
